@@ -12,17 +12,17 @@ Pod::Spec.new do |s|
   s.summary          = 'Today'
   s.homepage         = 'https://github.com/TodayRepo'
   s.license          = "MIT"
-  s.author           = { 'Today' => '15012981687@163.com' }
+  s.author           = { 'Today' => '809848374@qq.com' }
   s.source           = { :git => 'https://github.com/TodayRepo/TDLogKit.git', :tag => s.version }
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'TDLogKit/TDLogKit/**/*.{h,m}'
+  s.source_files = 'TDLogKit/**/*.{h,m}'
   #  spec.resource_bundles = {
   #      'TDNetwork' => ['TDNetwork/TDNetwork/*.xcassets', 'TDNetwork/TDNetwork/**/*.json']
   #  }
 
-  s.public_header_files = 'TDLogKit/TDLogKit/**/*.h'
+  s.public_header_files = 'TDLogKit/**/*.h'
   
   #spec.pod_target_xcconfig = {
   #    'OTHER_LDFLAGS' => '$(inherited) -ObjC -all_load ',
