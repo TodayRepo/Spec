@@ -1,0 +1,57 @@
+snip
+
+@property (nonatomic,copy) void(^<#名称#>)(<#类型#> <#参数名#>);
+
+@property (nonatomic, strong) <#名称#> *<#参数名#>;
+
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupViews];
+        [self setupConstraints];
+    }
+    return self;
+}
+
+- (void)setupViews {
+    
+}
+
+- (void)setupConstraints {
+    
+}
+
+
+
+
+#pragma mark - delegate & datasource
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    static NSString *identify = <#Identify#>;
+    <#Cell#>*cell = [tableView dequeueReusableCellWithIdentifier:identify];
+    if (cell == nil) {
+        cell = [[<#Cell#> alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
+    }
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return <#number#>;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return <#height#>;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+
+
+#import <Masonry/Masonry.h>
+#import "UIColor+TDExtend.h"
+#import "TDLanguage.h"
+#import "TDUIAssistant.h"
+
